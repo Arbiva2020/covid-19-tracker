@@ -1,0 +1,38 @@
+/*flex:1 - makes every info box spread as much as they can*/
+.InfoBox{
+    flex: 1;
+    /*if we want the hand symbol when we hover over elements:*/
+    cursor: pointer;  
+}
+
+/*apply to every child but the last child*/
+.InfoBox:not(:last-child) {
+    margin-right: 15px;
+}
+
+.InfoBox__cases {
+color: #cc1034;
+font-weight: 600;
+font-size: 1.75rem;
+margin-right: 0.5rem;
+}
+
+/*they will override the material ui*/
+.InfoBox__total {
+    color: #6c757d;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-right: 15px !important;
+    }
+
+    .InfoBox---selected {
+        border-top: 10px solid pink;
+    }
+
+    .InfoBox---red {
+        border-color: red;
+    }
+
+    .InfoBox__cases---green {
+        color:lightgreen !important;
+    }

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+/*by defalt, display flex pushes everything into a row*/
+/*if we add flex-direction: column, it will get the full width underneeth*/
+/*justify-content: space-between - spaces the children in the parent element*/
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__header > h1 {
+  color: red;
+  font-size: 2rem;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*because we want the left side to be larger than the right one*/
+.app__left {
+  flex: 0.9;
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right.MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}

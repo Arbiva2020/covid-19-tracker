@@ -1,0 +1,22 @@
+.table {
+    margin-top: 20px;
+    overflow: scroll; 
+    /*in order to scroll, we need to give the element a height*/
+    height: 400px;
+    color: rgb(26, 13, 13);
+    background-color: white;
+}
+
+/*if we want to color every odd row, we do this:*/
+.table tr:nth-of-type(odd) {
+    background-color: rgb(236, 199, 204);
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table td {
+    padding: 0.5rem;
+}
